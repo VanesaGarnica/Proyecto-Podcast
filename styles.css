@@ -1,0 +1,290 @@
+#logo_img {
+  padding: 15px;
+}
+h1 {
+  font-family: "IBM Plex Sans";
+  font-weight: lighter;
+  font-size: 3em;
+}
+h2 {
+  font-family: "IBM Plex Sans";
+  font-size: 1.5em;
+}
+p {
+  font-family: "IBM Plex Mono";
+}
+footer {
+  display: flex;
+  align-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+#phone_paragraph {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.flex_container {
+  display: flex;
+  flex-flow: wrap;
+}
+.social_container {
+  text-align: center;
+  font-size: 2em;
+}
+.social_container a {
+  text-decoration: none;
+}
+i.fab:hover {
+  color: blue;
+}
+.icon_content {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  width: 100%;
+}
+.text_section {
+  margin: 100px 30px 30px 30px;
+}
+h1 .centered {
+  text-align: center;
+}
+.button {
+  padding: 10px 30px 10px 30px;
+  background-color: #00f3bb;
+}
+a {
+  text-decoration: none;
+}
+.episodes_spotify {
+  width: 100%;
+  height: 232px;
+  border: 0px;
+  background-color: transparent;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.skewed_bg {
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 100vw;
+  background-image: linear-gradient(blue, cyan);
+  transform: skewY(-6deg);
+  transform-origin: top left;
+  z-index: -999;
+}
+#skewed_bg_1 {
+  top: 500px;
+  bottom: 700px;
+  height: 230%;
+}
+#footer_bg {
+  background-color: white;
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 100vw;
+  z-index: -998;
+  top: 5750;
+  height: 30%;
+}
+.image_phone {
+  width: 100%;
+  padding-top: 80px;
+}
+.mujeres_tecnologia {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+/*===========*/
+
+body {
+  margin: 0;
+  font-family: "IBM Plex Mono";
+  background-color: #f4f4f4;
+  font-size: 100%;
+}
+
+a {
+  color: #000;
+}
+
+/* header */
+
+.header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .social_container{
+    padding: 50px;
+  }
+  .topic_icon{
+    height: 104px;
+  }
+  #flex_container_episodes{
+    justify-content: space-between;
+  }
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+  }
+  footer p{
+    padding: 50px;
+  }
+  #skewed_bg_1 {
+    height: 150%;
+  }
+  #phone_paragraph {
+    flex-direction: row;
+    justify-content: space-around;
+    -ms-justify-content: space-between;
+    -webkit-justify-content: space-around;
+  }
+  .button {
+    padding: 10px 50px 10px 50px;
+  }
+  .episodes_spotify {
+    width: 49%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .mujeres_tecnologia {
+    width: 33%;
+  }
+  .icon_content {
+    width: 25%;
+  }
+  .text_section {
+    margin: 150px 300px 150px 300px;
+  }
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>proyecto_Acamica</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono%7CIBM+Plex+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="imagenes/logo.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/f84e5571f5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="header">
+      <img src="imagenes/logo.svg" id="logo_img" alt="Pale Blue Dot Logo" />
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn">
+        <span class="navicon"></span>
+      </label>
+      <ul class="menu">
+        <li><a href="#episodios">EPISODIOS</a></li>
+        <li><a href="#nosotros">NOSOTROS</a></li>
+        <li><a href="#entrevistas">ENTREVISTAS</a></li>
+        <li><a href="#topicos">TÓPICOS</a></li>
+      </ul>
+    </nav>
+    <section class="text_section">
+      <h1>
+        Hello <span style="text-decoration: line-through;">world</span> pale
+        blue dot<span style="color: blue;">.</span>
+      </h1>
+      <p>
+        El portal de podcast que explora el mundo de la programación y la
+        tecnología. Nuevos episodios, todos los jueves cada 15 días.
+      </p>
+      <br />
+      <a href="#nosotros">
+        <span class="button">CONOCÉ MÁS</span>
+      </a>
+      <a name="episodios"></a>
+    </section>
+    <section class="text_section">
+      <h1>
+        <span style="color: white;">Episodios</span>
+      </h1>
+      <section class="flex_container" id="flex_container_episodes">
+        <iframe
+          class="episodes_spotify"
+          src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt"
+          allow="encrypted-media"
+        ></iframe>
+        <iframe
+          class="episodes_spotify"
+          src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby"
+          allow="encrypted-media"
+        ></iframe>
+        <iframe
+          class="episodes_spotify"
+          src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv"
+          allow="encrypted-media"
+        ></iframe>
+        <iframe
+          class="episodes_spotify"
+          src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn"
+          allow="encrypted-media"
+        ></iframe>
+      </section>
+    </section>
+    <article>
+      <a name="nosotros"></a>
+      <section id="phone_paragraph">
+        <img
+          class="image_phone"
+          src="imagenes/phone.png"
+          alt="the secret history of women in coding"
+        />
+        <section class="text_section">
+          <h1>De dónde venimos</h1>
+          <p>
+            Our posturings, our imagined self importance, the delusion that we
+            have some privileged position in the Universe, are challenged by
+            this point of pale light.
+            <br />
+            <br />
+            Our planet is a lonely speck in the great enveloping cosmic dark. In
+            our oscurity, in all this vastness, there is no hint that help will
+            come from elsewhere to save us from ourselves.
+          </p>
+        </section>
+      </section>
+      <a name="entrevistas"></a>
+      <section class="text_section">
+        <h1>Invitados Estelares</h1>
+      </section>
+      <section class="flex_container">
+        <img
+          class="mujeres_tecnologia"
+          src="imagenes/grace-hopper.png"
+          alt="Grace Hopper"
+        />
+        <img
+          class="mujeres_tecnologia"
+          src="imagenes/susan-kare.png"
+          alt="Susan Kare"
+        />
+        <img
+          class="mujeres_tecnologia"
+          src="imagenes/Margaret_Hamilton.png"
+          alt="Margaret Hamilton"
+        />
+        <img
+          class="mujeres_tecnologia"
+          src="imagenes/Katie-Bouman.png"
+          alt="Katie Bouman"
+        />
+        <img
+          class="mujeres_tecnologia"
+          src="imagenes/eniac.png"
+          alt="mujeres operadoras"
+        />
+        <img
+          class="mujeres_tecnologia"
+          src="imagenes/univac.png"
+          alt="univac computer"
+        />
+      </section>
+      <a name="topicos"></a>
+      <section class="text_section">
+        <h1>Algunos de nuestros temas</h1>
+        <section class="flex_container">
+          <section class="icon_content">
+            <img src="imagenes/icon1.svg" alt="Trabajo Remoto" class="topic_icon"/>
+            <h2>Trabajo Remoto</h2>
+          </section>
+          <section class="icon_content">
+            <img src="imagenes/icon2.svg" alt="Repensando la Programación"  class="topic_icon"/>
+            <h2>Repensando la Programación</h2>
+          </section>
+          <section class="icon_content">
+            <img src="imagenes/icon3.svg" alt="Bases del Código"  class="topic_icon"/>
+            <h2>Bases del Código</h2>
+          </section>
+          <section class="icon_content">
+            <img src="imagenes/icon4.svg" alt="Seguridad Informática"  class="topic_icon"/>
+            <h2>Seguridad Informática</h2>
+          </section>
+        </section>
+        <br /><br />
+        <h1>
+          ¿Querés las últimas novedades?
+        </h1>
+        <a href="#episodios">
+          <span class="button">ESCUCHÁ LOS EPISODIOS</span>
+        </a>
+      </section>
+    </article>
+
+    <div id="skewed_bg_1" class="skewed_bg"></div>
+    <div id="footer_bg"></div>
+    <footer>
+      <p>
+        © 2019— Hello blue pale dot
+      </p>
+      <nav class="social_container">
+        <a href="https://www.spotify.com">
+          <i class="fab fa-spotify"></i>
+        </a>
+        <a href="https://www.instagram.com">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.twitter.com">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.facebook.com">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.telegram.org">
+          <i class="fab fa-telegram"></i>
+        </a>
+      </nav>
+    </footer>
+  </body>
+</html>
